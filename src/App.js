@@ -9,8 +9,8 @@ function App() {
   const [filteredTodos,setFilteredTodos]=useState([])
 
    useEffect(()=>{
-    filterHandler()
-     const filterHandler=()=>{
+   
+   const filterHandler=()=>{
     switch(status){
       case 'completed':{
         setFilteredTodos(todos.filter((todo)=>todo.completed===true))
@@ -26,6 +26,7 @@ function App() {
       }
     }
   }
+    filterHandler();
   },[todos,status])
 
   
