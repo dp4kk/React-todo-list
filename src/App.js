@@ -10,9 +10,7 @@ function App() {
 
    useEffect(()=>{
     filterHandler()
-  },[todos,status])
-
-  const filterHandler=()=>{
+     const filterHandler=()=>{
     switch(status){
       case 'completed':{
         setFilteredTodos(todos.filter((todo)=>todo.completed===true))
@@ -28,6 +26,9 @@ function App() {
       }
     }
   }
+  },[todos,status])
+
+  
 
   //save to local
   // const saveLocalTodos=()=>{
