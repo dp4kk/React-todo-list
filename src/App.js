@@ -24,6 +24,8 @@ function App() {
         setFilteredTodos(todos)
         break;
       }
+      default:{setFilteredTodos(todos)
+         break;     }
     }
   }
     filterHandler();
